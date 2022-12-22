@@ -14,34 +14,27 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from core import views
+from django.urls import path, include
+from django.conf import settings
 
 """
 Inicio home/
-
 Historia about/
-
 Servicios services/
-
 Visítanos store/
-
 Contacto contact/
-
 Blog blog/
-
 Sample sample/ (esta es para páginas de prueba)
 """
 
 urlpatterns = [
-    # Paths del core
-    path('', views.home, name="Inicio"),
-    path('about/', views.about, name="Historia"),
-    path('services/', views.services, name="Servicio"),
-    path('store/', views.store, name="Visitanos"),
-    path('contact/', views.contact, name="Contacto"),
-    path('blog/', views.blog, name="Blog"),
-    path('sample/', views.sample, name="Sample"),
-    # directoris de admin
+    # Incluimos una nota de url configuración.
+    # agregamos una url a las urlpatterns.
+    path('', include('core.urls')),
+    #  Path directorios de admin
     path('admin/', admin.site.urls),
 ]
+
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
