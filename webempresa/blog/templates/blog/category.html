@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Promoción{% endblock %}
+
+{% block container %}
+    {% for entrada in category.get_posts.all %}
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-innerv text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">{{ entrada.published|date:"D d M Y"}}</span>
+                <span class="section-heading-lower">{{ entrada.title }}</span>
+              </h2>
+              <p class="mb-0">
+                <img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ entrada.image.url }}" alt="">
+              </p>
+              <h2 class="mb-0 mbt"> {{ entrada.content|linebreaks}}</h2>
+              <p class="mb-0 mbt">
+                <span class="section-heading-under">Publicado por <em><b>{{ entrada.author }}</b></em> en
+                  <!--<em><a href="#" class="link">{{ entrada.categories }}</a>, <a href="#" class="link">Ofertas</a></em>-->
+                  <em>
+                  {%for dato in entrada.categories.all %}
+                    <a href="{% url 'category' category.id %}" class="link" >{{ dato.name}}</a>
+                    {% if not forloop.last%},{% endif %}
+                  {% endfor %}
+                  </em>
+
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+{% endblock %}
+

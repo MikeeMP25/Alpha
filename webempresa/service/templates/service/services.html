@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %} <!-- Es el layout de la pagina principal-->
+{% load  static %}
+{% block title %}Menú{% endblock %}
+
+{% block container %}
+    <div class="col-md-12">
+      <h1 style="font-size: xx-large; color:#fefefe;">VINOS & LICORES</h1>
+    </div>
+   {% for bebida in menu %}
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">{{ bebida.title }}</span>
+                <span class="section-heading-lower">{{ bebida.subtitle }}</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ bebida.image.url }}" alt = "" title = '{{ bebida.title }}'>
+          <div class="product-item-description d-flex ml-auto">
+              <div class="bg-faded p-5 rounded">
+                  <p class="h1">Ingredientes:</p>
+                  <p class="" >{{ bebida.content|linebreaks}}</p>
+              </div>
+              <div class="bg-faded p-5 rounded">
+                   <p class="h1">Costo ${{ bebida.cost }}</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+{% endblock %}
+

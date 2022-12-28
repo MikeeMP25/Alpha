@@ -29,9 +29,13 @@ Sample sample/ (esta es para páginas de prueba)
 
 urlpatterns = [
     # Incluimos una nota de url configuración.
-    # agregamos una url a las urlpatterns.
-    path('', include('core.urls')),
-    #  Path directorios de admin
+    # Agregamos una url a las urlpatterns.
+    path('/', include('core.urls')),
+    # Agregamos la urlpatterns de app service
+    path('service/', include("service.urls")),
+    # Agregamos la urlpatterns de app blog
+    path('blog/', include("blog.urls")),
+    # Path Directorios de admin
     path('admin/', admin.site.urls),
 ]
 

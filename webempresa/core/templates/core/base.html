@@ -43,14 +43,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item  px-lg-4 {% if request.path == '' %}active{% endif %}">
+            <li class="nav-item  px-lg-4 {% if request.path == '/' %} active {% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'Inicio' %}">Inicio</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'Historia' %}">Historia</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicio' %}">Servicios</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Menu' %}">Menú</a>
             </li>
             <li class="nav-item px-lg-4  {% if request.path == '/store/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'Visitanos' %}">Visítanos</a>
@@ -58,8 +58,8 @@
             <li class="nav-item px-lg-4 {% if request.path == '/contact/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
             </li>
-            <li class="nav-item px-lg-4 {% if request.path == '/blog/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Blog' %}">Blog</a>
+            <li class="nav-item px-lg-4 {% if request.path|slice:':6'  == '/blog/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Promotions' %}">Promociones</a>
             </li>
           </ul>
         </div>
