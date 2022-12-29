@@ -13,7 +13,7 @@ Sample sample/ (esta es para páginas de prueba)
 
 
 def home(request):
-    return render(request,'core/home.html')
+    return render(request, 'core/home.html')
 
 
 def about(request):
@@ -28,6 +28,3 @@ def contact(request):
     return render(request, 'core/contact.html')
 
 
-
-def sample(request):
-    return render(request, 'core/sample.html')

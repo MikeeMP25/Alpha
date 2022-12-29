@@ -21,10 +21,15 @@
               <p class="mb-0 mbt">
                 <span class="section-heading-under">Publicado por <em><b>{{ entrada.author }}</b></em> en
                   <!--<em><a href="#" class="link">{{ entrada.categories }}</a>, <a href="#" class="link">Ofertas</a></em>-->
+                    <em>
+                      {%for dato in entrada.categories.all %}
 
-                  {%for dato in entrada.categories.all %}
-                  {{dato.name}}{% if not forloop.last%},{% endif %}
-                  {% endfor %}
+                      <a href="{% url 'category' dato.id %}" class="link">{{dato.name}}</a>
+                      {% if not forloop.last%}
+                      ,
+                      {% endif %}
+                      {% endfor %}
+                    </em>
                 </span>
               </p>
             </div>

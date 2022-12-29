@@ -17,25 +17,25 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 
-"""
-Inicio home/
+"""Inicio home/
 Historia about/
 Servicios services/
 Visítanos store/
 Contacto contact/
 Blog blog/
-Sample sample/ (esta es para páginas de prueba)
-"""
+Sample sample/ (esta es para páginas de prueba)"""
 
 urlpatterns = [
     # Incluimos una nota de url configuración.
     # Agregamos una url a las urlpatterns.
-    path('/', include('core.urls')),
-    # Agregamos la urlpatterns de app service
+    path('', include('core.urls')),
+    # Agregamos la urlpatterns de app service.
     path('service/', include("service.urls")),
-    # Agregamos la urlpatterns de app blog
+    # Agregamos la urlpatterns de app blog.
     path('blog/', include("blog.urls")),
-    # Path Directorios de admin
+    # Agregamos la urlpatterns de app page.
+    path('page/', include("pages.urls")),
+    # Path Directorios de admin.
     path('admin/', admin.site.urls),
 ]
 
