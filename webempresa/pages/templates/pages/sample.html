@@ -15,7 +15,7 @@
                   <span class="section-heading-lower">{{ pages.title }}</span>
                 </h2>
                 <div class="section-content">
-                    <p>{{ pages.content|linebreaks }}</p>
+                    <p>{{ pages.content|safe }}</p>
                   {% if user.is_authenticated %}
                   <p><a href="{% url 'admin:pages_page_change' pages.id %}">Editar</a></p>
                   {% endif%}
