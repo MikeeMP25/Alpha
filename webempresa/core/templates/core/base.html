@@ -13,6 +13,7 @@
       {% load static %}
     <!-- Bootstrap -->
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/img_bar/tarro_menu.png' %}" rel="shortcut icon">
 
     <!-- Fuentes -->
     <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
@@ -44,22 +45,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item  px-lg-4 {% if request.path == '/' %} active {% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Inicio' %}">Inicio</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Inicio' %}"><img src="{% static 'core/img_bar/tarro_menu.png' %}" width="20" height="20"/>  MAICK </a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Historia' %}">Historia</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Historia' %}"><img src="{% static 'core/img_bar/tarro_menu.png' %}" width="20" height="20"/>  Historia</a>
             </li>
-            <li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Menu' %}">Menú</a>
+            <li class="nav-item px-lg-4 {% if request.path == '/service/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Menu' %}"><img src="{% static 'core/img_bar/tarro_menu.png' %}" width="20" height="20"/>  Menú</a>
             </li>
             <li class="nav-item px-lg-4  {% if request.path == '/store/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Visitanos' %}">Visítanos</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Visitanos' %}"><img src="{% static 'core/img_bar/tarro_menu.png' %}" width="20" height="20"/>  Visítanos</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/contact/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}"><img src="{% static 'core/img_bar/tarro_menu.png' %}" width="20" height="20"/>  Contacto</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path|slice:':6'  == '/blog/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'Promotions' %}">Promociones</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'Promotions' %}"><img src="{% static 'core/img_bar/tarro_menu.png' %}" width="20" height="20"/> Promociones</a>
             </li>
           </ul>
         </div>
@@ -108,7 +109,7 @@
             {% if not forloop.last %}.{% endif%}
             {% endfor %}
 		</p>
-        <p class="m-0 mbt1">&copy; Miack 2018</p>
+        <p class="m-0 mbt1">&copy; Miack 2017</p>
       </div>
 	</footer>
 
