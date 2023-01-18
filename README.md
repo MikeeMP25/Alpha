@@ -16,7 +16,7 @@
 **WEB:** HTML 5<br>
 
   
-##Comentario Personal.  
+## Comentario Personal.  
 
 "En lo personal Django tiene muchas funcionalidades explotable e interativas 
 que puedes manipular y desarrollar a tu gusto maneja una estructura de 
