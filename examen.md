@@ -47,7 +47,9 @@ Deportes
   <https://markdown.es/sintaxis-markdown/>  
   [Haz click aquí](https://gpscontrol.com.mx/videovigilancia-movil/)
   
+  # Foto
   
+  ![Naruto](imagen/naruto.png "Konoha 🥉 🔢")
   
   
   
