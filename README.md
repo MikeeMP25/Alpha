@@ -35,8 +35,4 @@ print("""Hola Bienvenidos al curso de MARKDOWN :)
       El resultado de la multiplicacion es:{}
        """.format(primer_num*segundo_num))
 ```
-![Naruto](imagen/naruto.png "Konoha 🥉 🔢")
 
-![imagen de media](webempresa/media/blog/presentacion.jpeg  "Bebida ")
-
-\# Jesus 
