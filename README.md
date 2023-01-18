@@ -26,7 +26,7 @@ que seguir el orden para poder hacerlo a una escalabilidad mayor y mejor
 a nivel empresarial."
 
 
-~~~
+
 ```python
 primer_num=2
 segundo_num=6
@@ -35,4 +35,6 @@ print("""Hola Bienvenidos al curso de MARKDOWN :)
       El resultado de la multiplicacion es:{}
        """.format(primer_num*segundo_num))
 ```
-~~~
+![Naruto](https://github.com/MikeeMP25/Alpha/blob/master/imagen/naruto.png)
+
+
