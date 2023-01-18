@@ -37,4 +37,6 @@ print("""Hola Bienvenidos al curso de MARKDOWN :)
 ```
 ![Naruto](imagen/naruto.png "Konoha 🥉 🔢")
 
+![imagen de media](webempresa/media/blog/presentacion.jpeg  "Bebida ")
 
+\# Jesus 
