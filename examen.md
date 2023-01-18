@@ -1,7 +1,7 @@
-<p>
+
 # PRACTICA EN MARCKDOWN
 # Nombre: Jesús Miguel Miranda Pérez                                                    # Fecha: 18/01/2023  
-</p>
+
 
 ## 1.-¿QUE ESPERO OBTENER DURANTE MIS ESTADIAS PROFESIONALES EN MADD SYSTEMS GRUOP?
 
@@ -15,11 +15,13 @@ durante la carrera y seguir creccinedo como persona y profesionista.
      - **Honestidad**
      - **Responsabilidad**
      - **Empatía**
-     - **Tolerancia**
- **DEFECTOS**
- - 1) Impuntualidad
-     - 2) Impaciente
-       - 3) Sociable
+     - **Tolerancia**   
+ 
+**DEFECTOS**
+   - 1 Impuntualidad
+      - 2 Impaciente
+        - 3 Sociable
+  
 #### 3.- Menciona 8 pasatiempos que haces en tus tiempos libres, 3 deportes que practiques, te gusten o te llamen la atención y 3 animales favoritos  
 
 Pasatiempos
@@ -30,12 +32,13 @@ Pasatiempos
 - :book: Leer
 - :clapper: Ver peliculas
 - 👪 Salir con amig@s
-- :8ball: Jugar billar
- Deportes 
+- :8ball: Jugar billar  
+Deportes 
      - ⚽ Futbol
      - 🏐 Volibothol
-     - 🏊‍♂️ Nadar
-   Animales
+     - 🏊‍♂️ Nadar  
+     
+     Animales
    - 🐰 conejo
    - 🐟 peces
    - 🐶 Perro
@@ -43,6 +46,9 @@ Pasatiempos
   <https://madd.com.mx/>.  
   <https://markdown.es/sintaxis-markdown/>  
   [Haz click aquí](https://gpscontrol.com.mx/videovigilancia-movil/)
+  
+  
+  
   
   
   
